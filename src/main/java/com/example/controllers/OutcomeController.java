@@ -27,7 +27,7 @@ public class OutcomeController {
     @Autowired
     private OutcomeConverter outcomeConverter;
 
-    @ApiOperation(value = "Retrieve all existed outcomes", notes = "This Operation returns all outcomes.")
+    @ApiOperation(value = "Retrieve all existed outcomes", notes = "This Operation return all outcomes.")
     @GetMapping
     public ResponseEntity<List<OutcomeResponse>> findAllOutcomes() {
         List<Outcome> outcomes = outcomeService.findAllOutcomes();
